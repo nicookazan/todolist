@@ -1,0 +1,4 @@
+<form action="" #f="ngForm" (ngSubmit)="f.form.valid && onAddTask()" >
+  <input class="col-auto" type="text" placeholder="Enter New Task" [(ngModel)]="taskInput" name="task" >
+  <button type="submit" class="col-auto m-2 btn btn-primary">Add new task</button>
+</form>

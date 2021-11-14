@@ -1,0 +1,10 @@
+
+  <ul *ngFor="let item of todo; let i = index" style="list-style-type:none;">
+    <li class="row">
+      <div class="col-auto"><input type="checkbox"></div>
+      <div class="col-2"> {{item.name}} </div>
+      <div class="col-auto"><button class="btn btn-primary p-1 ml-1"> Edit </button></div>
+      <div class="col-auto"><button class="btn btn-primary p-1" (click)="removeTask(i)"> Remove </button></div>
+    </li>
+  </ul>
+
