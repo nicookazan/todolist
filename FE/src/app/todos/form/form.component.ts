@@ -1,7 +1,8 @@
-import { TodoService } from '../todo.service';
+import { Router, ActivatedRoute } from '@angular/router';
+import { TodoService } from '../../todo.service';
 import { TodoComponent } from '../todo/todo.component';
 import { Component, OnInit } from '@angular/core';
-import { Todo } from '../todo.model';
+import { Todo } from '../../todo.model';
 
 @Component({
   selector: 'app-form',
@@ -12,7 +13,10 @@ export class FormComponent implements OnInit {
 
   taskInput:string = "";
 
-  constructor(private TodoService:TodoService) {
+  constructor(
+    private TodoService:TodoService,
+    private router:Router,
+    private route:ActivatedRoute) {
   }
 
   ngOnInit(): void {
@@ -21,6 +25,7 @@ export class FormComponent implements OnInit {
   onAddTask() {
     let todo1 = new Todo(this.taskInput);
     this.TodoService.addTask(todo1);
-
   }
+
+
 }

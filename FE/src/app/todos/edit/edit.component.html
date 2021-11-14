@@ -1,0 +1,4 @@
+<form action="" class="container" #f="ngForm" (ngSubmit)="f.form.valid && editTask()">
+  <input type="text" placeholder="Add" class="col-2" [(ngModel)]="taskInput" name="task" required>
+  <button class="col-auto m-2 btn btn-primary">Save</button>
+</form>

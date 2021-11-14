@@ -9,15 +9,13 @@ export class TodoService {
   constructor() { }
 
   addTask(todo:Todo) {
-/*     if(this.todo == null){
-      this.todo=[];
-    } */
     this.todo.push(todo);
     console.log(this.todo);
   }
 
-  removeTask(){
-
+  editTask(id:number,task:string){
+    this.todo[id].name = task;
   }
+
 
 }

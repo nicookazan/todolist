@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Login</h1>
+  <form action="">
+    <div class="row">
+      <label for="" class="col-2">User</label><input class="col-auto" type="text" [(ngModel)]="user" name="user" required>
+    </div>
+    <div class="row">
+      <label for="" class="col-2">Password</label> <input type="password" class="col-auto" [(ngModel)]="pass" name="pass" required>
+    </div>
+    <button class="btn btn-primary" (click)="login(user, pass)">Login</button>
+  </form>
+</div>
