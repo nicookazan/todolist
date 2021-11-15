@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { TodosComponent } from './todos/todos.component';
 import { EditComponent } from './todos/edit/edit.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { EditComponent } from './todos/edit/edit.component';
     LoginComponent,
     TodosComponent,
     EditComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,

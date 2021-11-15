@@ -1,4 +1,9 @@
 <form action="" #f="ngForm" (ngSubmit)="f.form.valid && onAddTask()" >
-  <input class="col-auto" type="text" placeholder="Enter New Task" [(ngModel)]="taskInput" name="task" required >
-  <button type="submit" class="col-auto m-2 btn btn-primary">Add new task</button>
+<div class="form-group">
+  <input class="form-control col-auto " type="text" placeholder="Enter New Task" [(ngModel)]="taskInput" name="task" required >
+  <button type="submit" class="col-auto mt-3 btn btn-primary form-control"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+  </svg>Add new task </button>
+</div>
+
 </form>
